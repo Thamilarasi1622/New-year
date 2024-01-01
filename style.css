@@ -1,0 +1,70 @@
+body{
+    background-image:linear-gradient(to right,blue 10%,red)
+}
+h1{
+display: flex;
+justify-content: center;
+position: absolute;
+top:18%;
+bottom: 50%;
+left:38%;
+transition: 5s;
+font-size: 10rem;
+color:yellow;
+font-weight: bold;
+transition-timing-function: linear;
+transition-delay: 2s;
+animation-name: example;
+animation-duration: 2s;
+/* filter: blur(1px); */
+}
+@keyframes example{
+    100%{
+color:deeppink;
+font-size: large;
+    }
+    75%{
+        color:blue;
+    }
+}
+h1 :hover last-child{
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+}
+h1:hover{
+    color: #ffff;
+}
+h2{
+position: absolute;
+left: 35%;
+top:25%;
+font-size: 3rem;
+color: white;
+transition:2s;
+cursor: pointer;
+animation-name:circle;
+animation-duration: 5s;
+
+}
+@keyframes circle{
+    25%{
+        color:rgb(255, 0, 157);
+        font-size: 20px;
+    }
+    50%{
+        color:pink;
+    }
+    75%{
+        color:lime;
+        font-weight: bold;
+        text-shadow: 23%;
+    }
+   100%{
+color:blue;
+font-size: 4rem;
+
+}
+}
+h2:hover{
+    color: greenyellow;
+}
